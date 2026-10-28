@@ -1,21 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family:  Playfair Display, sans-serif;
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	min-height: 100vh;
-	min-height: 100dvh;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #1b263b;
+  line-height: 1.6;
 }
-.header{
-	background-color: rgba(210, 208, 186, 1);
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 1rem 2rem;
+
+/* Encabezado */
+.header {
+  background-color: #0b1f3a;
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
 }
+
+/* Título principal */
+.title {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+/* Menú de navegación */
+nav {
+  margin: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #8ecae6;
+}
+
+/* Botones de idioma */
+.languages {
+  margin-top: 15px;
+}
+
+.lang.button {
+  background-color: white;
+  color: #0b1f3a;
+  border: 2px solid white;
+  padding: 8px 18px;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lang.button:hover {
+  background-color: #8ecae6;
+  border-color: #8ecae6;
+}
+
+/* Contenido principal */
+main {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+/* Secciones */
+.section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(11, 31, 58, 0.1);
+}
+
+/* Títulos de las secciones */
+.section h2 {
+  color: #0b1f3a;
+  font-size: 26px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #0b1f3a;
+  padding-bottom: 8px;
+}
+
+/* Párrafos */
+.section p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+/* Lista de objetivos */
+.section ul {
+  padding-left: 25px;
+}
+
+.section li {
+  margin-bottom: 12px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    margin: 15px auto;
+    padding: 12px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+}
+
