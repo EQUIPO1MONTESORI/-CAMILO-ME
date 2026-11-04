@@ -1,34 +1,77 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>camilo melgarejo</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="title">pagina de camilo</h1>
-      <nav>
-        <a href="#">sobre mi</a>
-        <a href="#">mi proyecto de vida</a>
-      </nav>
-      <div class="languages">
-           <button class="lang button">ES</button>
-           <button class="lang button">EN</button>
-      </div>
-    </header>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camilo Melgarejo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="title" data-i18n="title">Página de Camilo</h1>
+
+    <nav>
+      <a href="#about-me" data-i18n="nav1">Sobre mí</a>
+      <a href="#life-project" data-i18n="nav2">Mi proyecto de vida</a>
+    </nav>
+
+    <div class="languages">
+      <button class="lang button" type="button" data-lang="es">ES</button>
+      <button class="lang button" type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
   <main>
-    <section class="section" id="about me">
-      <h2>sobre mi</h2>
-      <p>Mi nombre es Camilo, tengo 15 años y nací en Ibagué, Colombia. Me gustan mucho los videojuegos porque son una forma divertida de pasar mi tiempo libre y entretenerme. En el futuro quiero ser abogado, ya que me interesa aprender sobre las leyes y ayudar a las personas. Soy una persona con metas y espero poder cumplir mis sueños con esfuerzo y dedicación. </p>
-    <h2>mi proyecto de vida</h2>
-    <p>Mi proyecto de vida es ser abogado. Tengo 15 años y quiero empezar desde ahora a esforzarme para cumplir esta meta. Me interesa el Derecho porque quiero defender los derechos de las personas y ayudar a quienes lo necesiten. Para lograrlo, quiero terminar mis estudios, entrar a una universidad y estudiar Derecho. Sé que será un camino que requiere responsabilidad, disciplina y mucho esfuerzo, pero estoy dispuesto a superar las dificultades. En el futuro quiero tener una buena profesión, ayudar a mi familia y ser un abogado honesto y responsable. Mi mayor propósito es cumplir mis sueños y construir un futuro del que pueda sentirme orgulloso.</p>  
- <ul>
-  <li>1. Terminar el colegio y esforzarme en mis estudios. </li>
-  <li>2. Estudiar Derecho en una universidad y graduarme como abogado. </li>
-  <li>3. Ejercer la profesión, siendo un abogado responsable, honesto y ayudando a las personas.</li>
-</ul>
-</section>
+    <section class="section" id="about-me">
+
+      <h2 data-i18n="aboutTitle">Sobre mí</h2>
+
+      <p data-i18n="aboutText">
+        Mi nombre es Camilo, tengo 15 años y nací en Ibagué, Colombia.
+        Me gustan mucho los videojuegos porque son una forma divertida
+        de pasar mi tiempo libre y entretenerme. En el futuro quiero
+        ser abogado, ya que me interesa aprender sobre las leyes y
+        ayudar a las personas. Soy una persona con metas y espero poder
+        cumplir mis sueños con esfuerzo y dedicación.
+      </p>
+
+      <div id="life-project">
+        <h2 data-i18n="projectTitle">Mi proyecto de vida</h2>
+
+        <p data-i18n="projectText">
+          Mi proyecto de vida es ser abogado. Tengo 15 años y quiero
+          empezar desde ahora a esforzarme para cumplir esta meta.
+          Me interesa el Derecho porque quiero defender los derechos
+          de las personas y ayudar a quienes lo necesiten. Para lograrlo,
+          quiero terminar mis estudios, entrar a una universidad y
+          estudiar Derecho. Sé que será un camino que requiere
+          responsabilidad, disciplina y mucho esfuerzo, pero estoy
+          dispuesto a superar las dificultades. En el futuro quiero
+          tener una buena profesión, ayudar a mi familia y ser un abogado
+          honesto y responsable. Mi mayor propósito es cumplir mis sueños
+          y construir un futuro del que pueda sentirme orgulloso.
+        </p>
+
+        <ul>
+          <li data-i18n="goal1">
+            1. Terminar el colegio y esforzarme en mis estudios.
+          </li>
+          <li data-i18n="goal2">
+            2. Estudiar Derecho en una universidad y graduarme como abogado.
+          </li>
+          <li data-i18n="goal3">
+            3. Ejercer la profesión, siendo un abogado responsable,
+            honesto y ayudando a las personas.
+          </li>
+        </ul>
+      </div>
+
+    </section>
   </main>
-      <script src="script.js"></script>
-  </body>
+
+  <script src="script.js"></script>
+</body>
 </html>
+
